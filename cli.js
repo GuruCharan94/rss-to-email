@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 #!/usr/bin/env node
 const fs = require('fs');
 const RssToEmail = require('./src/RssToEmail');
