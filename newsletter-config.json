@@ -1,7 +1,8 @@
 {
   "accentColor": "#f36c3d",
   "filename": "issue-0",
-  "templateUrl": "https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/newsletter.mjml",
+  "MJMLtemplateUrl": "https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/newsletter.mjml",
+  "MDtemplateUrl" : "https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/newsletter.md",
   "header": {
     "title": "My Newsletter Title",
     "issueNumber": "0",

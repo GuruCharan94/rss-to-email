@@ -2,7 +2,8 @@
 const stampit = require('stampit');
 
 const DEFAULT_CONFIG_WARNING_MESSAGE = 'No configuration object included.';
-const DEFAULT_TEMPLATE_URL = 'https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/newsletter.mjml';
+const DEFAULT_MJML_TEMPLATE_URL = 'https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/newsletter.mjml';
+const DEFAULT_MD_TEMPLATE_URL = 'https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/newsletter.md';
 
 const HeaderConfig = stampit({
   props: {
@@ -35,13 +36,14 @@ const FeedConfig = stampit({
   init(options) {
     this.title = options.title;
     this.url = options.url;
-  }
+  },
 });
 
 const DEFAULT_CONFIG_OBJECT = {
   accentColor: 'red',
   filename: 'output',
-  templateUrl: DEFAULT_TEMPLATE_URL,
+  MJMLtemplateUrl: DEFAULT_MJML_TEMPLATE_URL,
+  MDtemplateUrl: DEFAULT_MD_TEMPLATE_URL,
   header: HeaderConfig({
     description: 'Newsletter Desc',
     title: 'Newsletter title',
@@ -57,7 +59,7 @@ const DEFAULT_CONFIG_OBJECT = {
   newsletterArchivesLink: 'www.gurucharan.in/newsletter',
   sponsorName: 'Sponsor Name',
   sponsorLink: 'www.gurucharan.in',
-  sponsorMessage: 'Company is the only one that agreed to pay us some money. So we tell you what they do. You already might know them, but whatever. Shut up and read. Also here is an extended free trial of their product'
+  sponsorMessage: 'Company is the only one that agreed to pay us some money. So we tell you what they do. You already might know them, but whatever. Shut up and read. Also here is an extended free trial of their product',
 };
 
 /**

@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const stampit = require('stampit');
 const Config = require('./Config');
 const Feed = require('./Feed');

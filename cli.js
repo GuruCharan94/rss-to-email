@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable linebreak-style */
 const fs = require('fs');
 const RssToEmail = require('./src/RssToEmail');
 
@@ -12,15 +13,14 @@ async function init(config) {
   // Get files
   const html = await rssToEmail.getEmail();
   const mjml = await rssToEmail.getEmail('mjml');
+  const md = await rssToEmail.getEmail('md');
 
-  return { html, mjml };
+  return { html, mjml, md };
 }
 
 const [,, ...args] = process.argv;
 
 if (args[0] && args[1]) {
-  console.log(`Using config file '${args[0]}'`);
-
   // Get config object from file path
   const config = JSON.parse(fs.readFileSync(args[0], 'utf8'));
 
@@ -28,8 +28,7 @@ if (args[0] && args[1]) {
   init(config).then((results) => {
     fs.writeFileSync(`${args[1]}/${config.filename}.html`, results.html);
     fs.writeFileSync(`${args[1]}/${config.filename}.mjml`, results.mjml);
-
-    console.log('Process complete');
+    fs.writeFileSync(`${args[1]}/${config.filename}.md`, results.md);
   });
 } else {
   console.error('Error: config file and output directory should be specified.');
