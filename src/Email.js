@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const mjmlLib = require('mjml');
 const stampit = require('stampit');
 const fetch = require('node-fetch');

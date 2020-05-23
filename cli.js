@@ -1,6 +1,7 @@
+/* eslint-disable linebreak-style */
 #!/usr/bin/env node
-const RssToEmail = require('./src/RssToEmail');
 const fs = require('fs');
+const RssToEmail = require('./src/RssToEmail');
 
 /**
  * Run the RSS to Email script
@@ -9,12 +10,11 @@ const fs = require('fs');
  */
 async function init(config) {
   const rssToEmail = RssToEmail(config);
-
   // Get files
   const html = await rssToEmail.getEmail();
   const mjml = await rssToEmail.getEmail('mjml');
 
-  return {html, mjml};
+  return { html, mjml };
 }
 
 const [,, ...args] = process.argv;

@@ -1,0 +1,34 @@
+{
+  "accentColor": "#f36c3d",
+  "filename": "issue-0",
+  "templateUrl": "https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/template-01.mjml",
+  "header": {
+    "title": "My Newsletter Title",
+    "issueNumber": "0",
+    "dateOfIssue": "30-05-2020"
+  },
+  "feeds": [
+    {
+      "title": "📣 Announcements / Updates Section",
+      "url": "http://www.feedforall.com/sample.xml",
+      "publishedSince": null
+    },
+    {
+      "title": "👩‍💻 Community Connect",
+      "url": "http://www.feedforall.com/sample.xml",
+      "publishedSince": null
+    },
+    {
+      "title": "🧠 Other Interesting Stuff",
+      "url": "http://www.feedforall.com/sample.xml",
+      "publishedSince": null
+    }
+  ],
+  "newsletterBrowserLink": "https://www.gurucharan.in/",
+  "newsletterUnsubscribeLink": "https://www.gurucharan.in/newsletter/unsubscribe",
+  "newsletterArchivesLink": "https://www.gurucharan.in/newsletter",
+  "sponsorName": "Sponsor Name",
+  "sponsorLink": "https://www.gurucharan.in",
+  "sponsorMessage": "Company is the only one that agreed to pay us some money. So we tell you what they do. You already might know them, but whatever. Shut up and read. Also here is an extended free trial of their product.",
+  "twitterShareLink": "https://twitter.com/intent/tweet?text=https%3A//www.gurucharan.in/newsletter/0"  
+}
