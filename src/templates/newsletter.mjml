@@ -74,7 +74,7 @@
           <mj-social padding="0 10px" font-size="10px" icon-size="30px" mode="horizontal">
             <mj-social-element name="facebook" href="{{newsletterBrowserLink}}">
             </mj-social-element>
-            <mj-social-element name="twitter" href="{{newsletterBrowserLink}}">
+            <mj-social-element name="twitter-noshare" href="{{twitterShareLink}}">
             </mj-social-element>
             <mj-social-element name="linkedin" href="{{newsletterBrowserLink}}">
             </mj-social-element>
