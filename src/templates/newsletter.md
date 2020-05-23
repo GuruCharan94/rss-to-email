@@ -13,8 +13,9 @@ date: {{header.dateOfIssue}}
 
 ### [{{this.title}}]({{this.link}})
 
-Enter commentary Here..
+Enter commentary Here.
 
+{{/each}}
 {{/each}}
 
 {% include social-share.html %}
