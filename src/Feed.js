@@ -1,16 +1,17 @@
 const Parser = require('rss-parser');
 const stampit = require('stampit');
+const fs = require('fs');
 
 /**
  * Cleans an item
  * @param {Object} item
  * @return {Object}
  */
-function cleanItem(item) {
+function cleanItem(item, itemDescription) {
+  console.log(itemDescription);
   const cleanedItem = Object.assign({}, item);
   cleanedItem.title = item.title.replace(/\bhttps?:\/\/\S+/gi, '');
-  cleanedItem.description = "aaa";
-  console.log(cleanedItem);
+  cleanedItem.description = itemDescription;
   return cleanedItem;
 }
 
