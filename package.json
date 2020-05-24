@@ -19,6 +19,7 @@
     "handlebars-helpers": "^0.10.0",
     "mjml": "^4.5.0",
     "node-fetch": "^2.6.0",
+    "remove-markdown": "^0.3.0",
     "rss-parser": "^3.7.2",
     "stampit": "^4.3.0"
   },

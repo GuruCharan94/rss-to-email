@@ -14,6 +14,8 @@ async function init(config) {
   const html = await rssToEmail.getEmail();
   const mjml = await rssToEmail.getEmail('mjml');
   const md = await rssToEmail.getEmail('md');
+  const txt = await rssToEmail.getEmail('txt');
+
 
   return { html, mjml, md };
 }
@@ -26,9 +28,11 @@ if (args[0] && args[1]) {
 
   // Run the script
   init(config).then((results) => {
-    fs.writeFileSync(`${args[1]}/${config.filename}.html`, results.html);
-    fs.writeFileSync(`${args[1]}/${config.filename}.mjml`, results.mjml);
-    fs.writeFileSync(`${args[1]}/${config.filename}.md`, results.md);
+    fs.writeFileSync(`${args[1]}/${config.filename}-${new Date().toDateString()}.html`, results.html);
+    fs.writeFileSync(`${args[1]}/${config.filename}-${new Date().toDateString()}.mjml`, results.mjml);
+    fs.writeFileSync(`${args[1]}/${config.filename}-${new Date().toDateString()}.md`, results.md);
+    fs.writeFileSync(`${args[1]}/${config.filename}-${new Date().toDateString()}.txt`, results.txt);
+
   });
 } else {
   console.error('Error: config file and output directory should be specified.');

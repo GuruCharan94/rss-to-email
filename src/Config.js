@@ -4,6 +4,7 @@ const stampit = require('stampit');
 const DEFAULT_CONFIG_WARNING_MESSAGE = 'No configuration object included.';
 const DEFAULT_MJML_TEMPLATE_URL = 'https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/newsletter.mjml';
 const DEFAULT_MD_TEMPLATE_URL = 'https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/newsletter.md';
+const DEFAULT_TXT_TEMPLATE_URL = 'https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/newsletter.txt';
 
 const HeaderConfig = stampit({
   props: {
@@ -44,6 +45,7 @@ const DEFAULT_CONFIG_OBJECT = {
   filename: 'output',
   MJMLtemplateUrl: DEFAULT_MJML_TEMPLATE_URL,
   MDtemplateUrl: DEFAULT_MD_TEMPLATE_URL,
+  TXTtemplateUrl: DEFAULT_TXT_TEMPLATE_URL,
   header: HeaderConfig({
     description: 'Newsletter Desc',
     title: 'Newsletter title',

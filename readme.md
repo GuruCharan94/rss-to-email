@@ -1,6 +1,6 @@
 # Rss-to-email
 
-Forker Version modified to fit newsletter need. See documentation of base repo.
+Forker Version modified to fit my newsletter need. See documentation of base repo.
 
 ## Running this
 
@@ -8,4 +8,4 @@ Forker Version modified to fit newsletter need. See documentation of base repo.
 - cd <folder>
 - npm install
 - node cli.js ./newsletter-config.json ./output/
-- See html and mjml files created in output folder.
+- See html, md and mjml files created in output folder.

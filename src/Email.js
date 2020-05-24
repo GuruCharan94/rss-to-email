@@ -20,6 +20,7 @@ const Email = stampit({
     feeds: undefined,
     mjmlContent: undefined,
     mdContent: undefined,
+    txtContent: undefined,
   },
 
   /**
@@ -37,8 +38,9 @@ const Email = stampit({
      * Generate mjmlContent from the config and feeds set in the constructor
      * @returns {Email}
      */
-    async generate() {
-      const source = await getTemplateFile(this.config.MJMLtemplateUrl);  
+    async generate(templateURL) {
+      
+      const source = await getTemplateFile(templateURL || this.config.MJMLtemplateUrl);  
       const template = handlebars.compile(source);
 
       this.mjmlContent = template({ ...this.config, feeds: this.feeds });
@@ -61,13 +63,23 @@ const Email = stampit({
      * @return {string}
      */
     async getMd() {
-      const source = await getTemplateFile(this.config.MDtemplateUrl);  
-      const template = handlebars.compile(source);
 
-      this.mjmlContent = template({ ...this.config, feeds: this.feeds });
+      this.mdContent || await this.generate(this.config.MDtemplateUrl);
 
       return this.mdContent;
     },
+
+      /**
+     * Get the HTML email as a string.
+     * @return {string}
+     */
+    async getTxt() {
+
+      this.txtContent || await this.generate(this.config.TXTtemplateUrl);
+
+      return this.txtContent;
+    },
+    
     /**
      * Get the HTML email as a string.
      * @return {string}
