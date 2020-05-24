@@ -11,7 +11,7 @@ date: {{header.dateOfIssue}}
 
 ### [{{this.title}}]({{this.link}})
 
-Enter commentary Here.
+{{@index}}
 {{/each}}
 {{/each}}
 
