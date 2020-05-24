@@ -17,7 +17,7 @@
   </mj-head>
   <mj-body>
     <!-- Header -->
-    <mj-section background-color="{{accentColor}"}>
+    <mj-section background-color="{{accentColor}}">
       <mj-column>
         <mj-text color="white" font-size="48px" padding-top="20px">{{header.title}}</mj-text>
           <mj-text color="white" padding="24px">{{header.dateOfIssue}}</mj-text>
