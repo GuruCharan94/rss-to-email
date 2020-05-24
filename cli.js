@@ -17,7 +17,7 @@ async function init(config) {
   const txt = await rssToEmail.getEmail('txt');
 
 
-  return { html, mjml, md };
+  return { html, mjml, md, txt };
 }
 
 const [,, ...args] = process.argv;
