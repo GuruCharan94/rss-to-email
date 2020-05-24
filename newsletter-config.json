@@ -15,19 +15,19 @@
       "title": "📣 Announcements / Updates Section",
       "url": "http://www.feedforall.com/sample.xml",
       "publishedSince": null,
-      "dataFile" : "./announcements.json" 
+      "dataFile" : "./data/announcements.json" 
     },
     {
       "title": "👩‍💻 Community Connect",
       "url": "http://www.feedforall.com/sample.xml",
       "publishedSince": null,
-      "dataFile" : "./community.json"
+      "dataFile" : "./data/community.json"
     },
     {
       "title": "🧠 Other Interesting Stuff",
       "url": "http://www.feedforall.com/sample.xml",
       "publishedSince": null,
-      "dataFile" : "./others.json" 
+      "dataFile" : "./data/others.json" 
     }
   ],
   "newsletterBrowserLink": "https://www.gurucharan.in/",
