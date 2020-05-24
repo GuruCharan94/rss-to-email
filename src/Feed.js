@@ -9,7 +9,7 @@ const stampit = require('stampit');
 function cleanItem(item) {
   const cleanedItem = Object.assign({}, item);
   cleanedItem.title = item.title.replace(/\bhttps?:\/\/\S+/gi, '');
-
+  cleanedItem.description = "aaa";
   return cleanedItem;
 }
 
@@ -45,7 +45,7 @@ const Feed = stampit({
       this.applyFilters();
       this.title = this.config.title || feedObject.title;
       this.description = this.config.description || feedObject.description;
-      this.url = this.config.url || feedObject.feedUrl;
+      this.url = this.config.url || feedObject.feedUrl;      
 
       return this;
     },

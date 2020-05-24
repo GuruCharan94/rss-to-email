@@ -1,8 +1,10 @@
+/* eslint-disable valid-jsdoc */
 /* eslint-disable linebreak-style */
 const mjmlLib = require('mjml');
 const stampit = require('stampit');
 const fetch = require('node-fetch');
 const handlebars = require('handlebars');
+const fs = require('fs');
 require('handlebars-helpers')({ handlebars });
 
 /**
@@ -39,12 +41,14 @@ const Email = stampit({
      * @returns {Email}
      */
     async generate(templateURL) {
-      
+  
       const source = await getTemplateFile(templateURL || this.config.MJMLtemplateUrl);  
       const template = handlebars.compile(source);
 
+      const commentary = JSON.parse(fs.readFileSync(args[0], 'utf8'));
+
       return template({ ...this.config, feeds: this.feeds });
-      
+
     },
 
     /**

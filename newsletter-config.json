@@ -14,17 +14,20 @@
     {
       "title": "📣 Announcements / Updates Section",
       "url": "http://www.feedforall.com/sample.xml",
-      "publishedSince": null
+      "publishedSince": null,
+      "dataFile" : "./announcements.json" 
     },
     {
       "title": "👩‍💻 Community Connect",
       "url": "http://www.feedforall.com/sample.xml",
-      "publishedSince": null
+      "publishedSince": null,
+      "dataFile" : "./community.json"
     },
     {
       "title": "🧠 Other Interesting Stuff",
       "url": "http://www.feedforall.com/sample.xml",
-      "publishedSince": null
+      "publishedSince": null,
+      "dataFile" : "./others.json" 
     }
   ],
   "newsletterBrowserLink": "https://www.gurucharan.in/",

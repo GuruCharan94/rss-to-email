@@ -19,7 +19,7 @@ Link: ({{sponsorLink}})
 ### {{this.title}}
 Link : ({{this.link}})
 
-{{@index}}
+{{this.description}}
 
 {{/each}}
 {{/each}}

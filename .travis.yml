@@ -1,9 +1,0 @@
-language: node_js
-node_js:
- - "10"
- - "9"
- - "8"
-script:
- - npm run test:unit
- - npm run test:integration
- - npm run lint

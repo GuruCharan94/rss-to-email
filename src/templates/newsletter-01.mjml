@@ -56,7 +56,7 @@
               <a href="{{this.link}}">{{this.title}}</a>
             </mj-text>
             <mj-text>
-              {{@index}}
+              {{this.description}}
             </mj-text>
             <mj-spacer height="10px" />
             <mj-divider></mj-divider>

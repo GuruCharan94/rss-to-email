@@ -11,7 +11,7 @@ date: {{header.dateOfIssue}}
 
 ### [{{this.title}}]({{this.link}})
 
-{{@index}}
+{{this.description}}
 {{/each}}
 {{/each}}
 

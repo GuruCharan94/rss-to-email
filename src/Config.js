@@ -55,6 +55,7 @@ const DEFAULT_CONFIG_OBJECT = {
     publishedSince: undefined,
     title: 'A custom feed title',
     url: 'http://www.feedforall.com/sample.xml',
+    dataFile: './data/others.json',
   })],
   newsletterBrowserLink: 'www.gurucharan.in/newsletter/0',
   newsletterUnsubscribeLink: 'www.gurucharan.in/newsletter/unsubscribe',
