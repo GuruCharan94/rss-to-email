@@ -43,9 +43,8 @@ const Email = stampit({
       const source = await getTemplateFile(templateURL || this.config.MJMLtemplateUrl);  
       const template = handlebars.compile(source);
 
-      this.mjmlContent = template({ ...this.config, feeds: this.feeds });
-
-      return this;
+      return template({ ...this.config, feeds: this.feeds });
+      
     },
 
     /**
@@ -53,7 +52,7 @@ const Email = stampit({
      * @return {string}
      */
     async getMjml() {
-      this.mjmlContent || await this.generate();
+      this.mjmlContent = await this.generate();
 
       return this.mjmlContent;
     },
@@ -64,7 +63,7 @@ const Email = stampit({
      */
     async getMd() {
 
-      this.mdContent || await this.generate(this.config.MDtemplateUrl);
+      this.mdContent = this.generate(this.config.MDtemplateUrl);
 
       return this.mdContent;
     },
@@ -75,7 +74,7 @@ const Email = stampit({
      */
     async getTxt() {
 
-      this.txtContent || await this.generate(this.config.TXTtemplateUrl);
+      this.txtContent = await this.generate(this.config.TXTtemplateUrl);
 
       return this.txtContent;
     },

@@ -8,7 +8,9 @@ date: {{header.dateOfIssue}}
 {{#each feeds}}
 ## {{this.title}}
 {{#each items}}
+
 ### [{{this.title}}]({{this.link}})
+
 Enter commentary Here.
 {{/each}}
 {{/each}}
