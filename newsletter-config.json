@@ -1,9 +1,9 @@
 {
   "accentColor": "#00695c",
   "filename": "newsletter",
-  "MJMLtemplateUrl": "https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/newsletter.mjml",
-  "MDtemplateUrl" : "https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/newsletter.md",
-  "TXTtemplateUrl": "https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/newsletter.txt",
+  "MJMLtemplateUrl": "https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/newsletter-01.mjml",
+  "MDtemplateUrl" : "https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/newsletter-01.md",
+  "TXTtemplateUrl": "https://raw.githubusercontent.com/gurucharan94/rss-to-email/master/src/templates/newsletter-01.txt",
 
   "header": {
     "title": "My Newsletter Title",
