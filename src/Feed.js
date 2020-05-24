@@ -10,6 +10,7 @@ function cleanItem(item) {
   const cleanedItem = Object.assign({}, item);
   cleanedItem.title = item.title.replace(/\bhttps?:\/\/\S+/gi, '');
   cleanedItem.description = "aaa";
+  console.log(cleanedItem);
   return cleanedItem;
 }
 
@@ -41,7 +42,9 @@ const Feed = stampit({
     async resolve() {
       const feedObject = await this.parser.parseURL(this.config.url);
 
-      this.items = feedObject.items.map(item => cleanItem(item));
+      const itemDescription = JSON.parse(fs.readFileSync(this.config.dataFile, 'utf8'));
+
+      this.items = feedObject.items.map((item,index) => cleanItem(item,itemDescription[index]));
       this.applyFilters();
       this.title = this.config.title || feedObject.title;
       this.description = this.config.description || feedObject.description;
