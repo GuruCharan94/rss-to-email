@@ -27,14 +27,14 @@
     <!-- Intro -->
     <mj-section>
       <mj-column>
-        <mj-text padding-top="20px">Thank you for opening the email 😊. Here are some things I think you will find interesting... </mj-text>
+        <mj-text padding-top="20px">Thank you for opening the email &#x1F60A . Here are some things that I think you will find interesting... </mj-text>
       </mj-column>
     </mj-section>
 
     <!-- Sponsors -->
     <mj-section>
       <mj-column border="3px dashed {{accentColor}}" padding="10px 5px">
-        <mj-text font-size="16px" color="black"> 🚀 This issue is brought to you by <a href="{{sponsorLink}}">{{sponsorName}}</a></mj-text>
+        <mj-text font-size="16px" color="black"> &#128640 This issue is brought to you by <a href="{{sponsorLink}}">{{sponsorName}}</a></mj-text>
         <mj-text>{{sponsorMessage}}</mj-text>
       </mj-column>
     </mj-section>
