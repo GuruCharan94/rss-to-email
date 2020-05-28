@@ -3,7 +3,9 @@ title: "{{header.title}} - Issue #{{header.issueNumber}}"
 date: {{header.dateOfIssue}}
 ---
 
+{{#if sponsorName}}
 {% include newsletter-sponsor sponsorLink={{sponsorLink}} sponsorName={{sponsorName}} sponsorMessage={{sponsorMessage}}  %}
+{{/if}}
 
 {{#each feeds}}
 ## {{this.title}}

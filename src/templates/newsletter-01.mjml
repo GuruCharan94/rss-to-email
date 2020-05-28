@@ -17,27 +17,30 @@
   </mj-head>
   <mj-body>
     <!-- Header -->
-    <mj-section background-color="{{accentColor}}">
+    <mj-section >
       <mj-column>
-        <mj-text color="white" font-size="48px" padding-top="20px">{{header.title}}</mj-text>
-          <mj-text color="white" padding="24px">{{header.dateOfIssue}}</mj-text>
+        <mj-text color="red" font-size="32px" padding-top="20px">{{header.title}}</mj-text>
+          <mj-text color="white" padding="24px">Issue {{header.issueNumber}} dated {{header.dateOfIssue}}</mj-text>
       </mj-column>
     </mj-section>
 
     <!-- Intro -->
     <mj-section>
       <mj-column>
-        <mj-text padding-top="20px">Thank you for opening the email &#x1F60A . Here are some things that I think you will find interesting... </mj-text>
+        <mj-text padding-top="20px">Thank you for opening the email. Here are some things that I think you will find interesting... </mj-text>
       </mj-column>
     </mj-section>
 
     <!-- Sponsors -->
+    {{#if sponsorName}}
     <mj-section>
       <mj-column border="3px dashed {{accentColor}}" padding="10px 5px">
-        <mj-text font-size="16px" color="black"> &#128640 This issue is brought to you by <a href="{{sponsorLink}}">{{sponsorName}}</a></mj-text>
+        <mj-text font-size="16px" color="black"> This issue is brought to you by <a href="{{sponsorLink}}">{{sponsorName}}</a></mj-text>
         <mj-text>{{sponsorMessage}}</mj-text>
       </mj-column>
     </mj-section>
+    {{/if}}
+
 
     <!-- Read from Browser -->
     <mj-section>
@@ -69,7 +72,7 @@
       <mj-section>
         <mj-column>
           <mj-text padding-bottom="20px">
-            If you liked this issue, can you please tell the world about the newsletter using the buttons below.
+            If you liked this issue, please, pleeease, pleeeeease tell your friends using the buttons below.
           </mj-text>
           <mj-social padding="0 10px" font-size="10px" icon-size="30px" mode="horizontal">
             <mj-social-element name="facebook" href="{{newsletterBrowserLink}}">
@@ -81,7 +84,7 @@
           </mj-social>
           <mj-spacer height="25px" />
           <mj-text align="center">
-            Built with 💙 by <a href="https://www.gurucharan.in"> Gurucharan Subramani </a>
+            Curated by <a href="https://www.gurucharan.in"> Gurucharan Subramani </a>
           </mj-text>
           <mj-spacer height="25px" />
           <mj-divider></mj-divider>

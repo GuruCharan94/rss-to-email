@@ -1,14 +1,17 @@
-# {{header.title}} #{{header.issueNumber}}
+# {{header.title}} 
 
-{{header.dateOfIssue}}
+Issue #{{header.issueNumber}} dated {{header.dateOfIssue}}
 
 You can read this email from your browser.
 Link : {{newsletterBrowserLink}}
 
+{{#if sponsorName}}
 This issue is brought to you by {{sponsorName}}
 Link: ({{sponsorLink}})
 
 {{sponsorMessage}}
+{{/if}}
+
 
 {{#each feeds}}
 

@@ -47,8 +47,8 @@ const DEFAULT_CONFIG_OBJECT = {
   MDtemplateUrl: DEFAULT_MD_TEMPLATE_URL,
   TXTtemplateUrl: DEFAULT_TXT_TEMPLATE_URL,
   header: HeaderConfig({
-    description: 'Newsletter Desc',
-    title: 'Newsletter title',
+    description: '',
+    title: 'title',
     url: 'http://www.feedforall.com/sample.xml',
   }),
   feeds: [FeedConfig({
@@ -58,11 +58,12 @@ const DEFAULT_CONFIG_OBJECT = {
     dataFile: './data/others.json',
   })],
   newsletterBrowserLink: 'www.gurucharan.in/newsletter/0',
-  newsletterUnsubscribeLink: 'www.gurucharan.in/newsletter/unsubscribe',
+  newsletterUnsubscribeLink: 'www.gurucharan.in/newsletter',
   newsletterArchivesLink: 'www.gurucharan.in/newsletter',
   sponsorName: 'Sponsor Name',
   sponsorLink: 'www.gurucharan.in',
   sponsorMessage: 'Company is the only one that agreed to pay us some money. So we tell you what they do. You already might know them, but whatever. Shut up and read. Also here is an extended free trial of their product',
+  twitterShareLink: ''
 };
 
 /**
