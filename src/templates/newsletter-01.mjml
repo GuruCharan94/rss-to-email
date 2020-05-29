@@ -75,11 +75,11 @@
             If you liked this issue, please, pleeease, pleeeeease tell your friends using the buttons below.
           </mj-text>
           <mj-social padding="0 10px" font-size="10px" icon-size="30px" mode="horizontal">
-            <mj-social-element name="facebook" href="{{newsletterBrowserLink}}">
+            <mj-social-element alt="facebook icon" name="facebook" href="{{newsletterBrowserLink}}">
             </mj-social-element>
-            <mj-social-element name="twitter-noshare" href="{{twitterShareLink}}">
+            <mj-social-element alt="twitter icon" name="twitter-noshare" href="{{twitterShareLink}}">
             </mj-social-element>
-            <mj-social-element name="linkedin" href="{{newsletterBrowserLink}}">
+            <mj-social-element alt="linkedin icon" name="linkedin" href="{{newsletterBrowserLink}}">
             </mj-social-element>
           </mj-social>
           <mj-spacer height="25px" />
